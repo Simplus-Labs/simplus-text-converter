@@ -1,7 +1,7 @@
 {
-  "name": "simplus-react-boilerplate",
+  "name": "simplus-text-converter",
   "author": "Simplus Labs",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "description": "A React boilerplate with consistent design for Simplus Toolbox, responsive layout, quick theme switching, and code quality tools.",
   "license": "MIT",
