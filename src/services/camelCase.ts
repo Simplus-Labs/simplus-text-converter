@@ -1,12 +1,11 @@
-// class example of functionalities 
-
-export default class camelCase {
+export default class CamelCase {
     constructor(private _input: string) { }
 
-    public avalibleTransformations: [string] = ["PascalCase"]
+    public availableTransformations: string[] = ["PascalCase"];
 
     get camelCaseToPascalCase() {
-        // logic to camel case
-        return this._input
+        // Logic to convert CamelCase to PascalCase
+        // Implement your conversion logic here
+        return this._input;
     }
 }
