@@ -15,6 +15,10 @@ export interface SplitOptions {
 }
 
 export function split(input: string, options: SplitOptions = {}) {
+    /* 
+    El resultado final es un arreglo de palabras divididas, 
+    con la opción de separar los números de las letras si se especifica en las opciones de paraametros.
+    */
     const { separateNumbers } = options;
     let result = input.trim();
 
@@ -39,4 +43,6 @@ export function split(input: string, options: SplitOptions = {}) {
     while (result.charAt(end - 1) === "\0") end--;
 
     return result.slice(start, end).split(/\0/g);
+
+    // ""
 }
