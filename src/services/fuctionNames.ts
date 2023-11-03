@@ -1,19 +1,41 @@
 import { camelCase, pascalCase, pascalSnakeCase, capitalCase, constantCase, dotCase, kebabCase, pathCase, sentenceCase, snakeCase, trainCase } from "./textFunctions"
 
-export const ConverterFunctions = {
-    camelCase: camelCase,
-    pascalCase: pascalCase,
-    pascalSnakeCase: pascalSnakeCase,
-    capitalCase: capitalCase,
-    constantCase: constantCase,
-    dotCase: dotCase,
-    kebabCase: kebabCase,
-    pathCase: pathCase,
-    sentenceCase: sentenceCase,
-    snakeCase: snakeCase,
-    trainCase: trainCase,
+// https://refactoring.guru/es/design-patterns/command/typescript/example#lang-features
 
+export type ConverterFunctionName =
+    | "camelCase"
+    | "pascalCase"
+    | "pascalSnakeCase"
+    | "capitalCase"
+    | "constantCase"
+    | "dotCase"
+    | "kebabCase"
+    | "pathCase"
+    | "sentenceCase"
+    | "snakeCase"
+    | "trainCase";
+
+export type ConverterFunction = (input: string) => string;
+
+interface ConverterFunctionsObject {
+    [key: string]: ConverterFunction;
 }
+
+export const ConverterFunctions: ConverterFunctionsObject = {
+    camelCase: (input: string) => camelCase(input),
+    pascalCase: (input: string) => pascalCase(input),
+    pascalSnakeCase: (input: string) => pascalSnakeCase(input),
+    capitalCase: (input: string) => capitalCase(input),
+    constantCase: (input: string) => constantCase(input),
+    dotCase: (input: string) => dotCase(input),
+    kebabCase: (input: string) => kebabCase(input),
+    pathCase: (input: string) => pathCase(input),
+    sentenceCase: (input: string) => sentenceCase(input),
+    snakeCase: (input: string) => snakeCase(input),
+    trainCase: (input: string) => trainCase(input),
+};
+
+
 
 /*
     camelCase          =>  (`fooBar`)

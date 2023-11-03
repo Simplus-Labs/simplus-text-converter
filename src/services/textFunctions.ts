@@ -83,6 +83,8 @@ export function dotCase(input: string, options?: Options) {
     const prefix = getPrefix(input, options?.prefixCharacters);
     const lower = lowerFactory(options?.locale);
     return prefix + split(input, options).map(lower).join(".");
+    // "Jonnier Martinez"
+    // "jonnier.martinez"
 }
 
 export function kebabCase(input: string, options?: Options) {
@@ -98,6 +100,7 @@ export function pathCase(input: string, options?: Options) {
 }
 
 export function sentenceCase(input: string, options?: Options) {
+
     const prefix = getPrefix(input, options?.prefixCharacters);
     const lower = lowerFactory(options?.locale);
     const upper = upperFactory(options?.locale);
@@ -112,6 +115,7 @@ export function sentenceCase(input: string, options?: Options) {
             .join(" ")
     );
 }
+
 
 export function snakeCase(input: string, options?: Options) {
     const prefix = getPrefix(input, options?.prefixCharacters);
