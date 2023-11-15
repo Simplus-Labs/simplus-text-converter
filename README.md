@@ -1,6 +1,6 @@
 > 🌐 [¿No hablas inglés? Haz clic aquí para la versión en español.](docs/README-ES.md)
 
-<h1 align="center">🛠 Simplus React Boilerplate 🛠</h1>
+<h1 align="center">Simplus Text Converter</h1>
 
 <p align="center">
   <a href="#tech-stack--features">🌟 <strong>Features</strong></a> ·
