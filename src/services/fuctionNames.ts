@@ -1,42 +1,51 @@
-import { camelCase, pascalCase, pascalSnakeCase, capitalCase, constantCase, dotCase, kebabCase, pathCase, sentenceCase, snakeCase, trainCase } from "./textFunctions"
+import {
+  camelCase,
+  pascalCase,
+  pascalSnakeCase,
+  capitalCase,
+  constantCase,
+  dotCase,
+  kebabCase,
+  pathCase,
+  sentenceCase,
+  snakeCase,
+  trainCase,
+} from './textFunctions';
 
 // https://refactoring.guru/es/design-patterns/command/typescript/example#lang-features
 
 export type ConverterFunctionName =
-    | "camelCase"
-    | "pascalCase"
-    | "pascalSnakeCase"
-    | "capitalCase"
-    | "constantCase"
-    | "dotCase"
-    | "kebabCase"
-    | "pathCase"
-    | "sentenceCase"
-    | "snakeCase"
-    | "trainCase";
+  | 'camelcase'
+  | 'pascalcase'
+  | 'pascalsnakecase'
+  | 'capitalcase'
+  | 'constantcase'
+  | 'dotcase'
+  | 'kebabcase'
+  | 'pathcase'
+  | 'sentencecase'
+  | 'snakecase'
+  | 'traincase';
 
 export type ConverterFunction = (input: string) => string;
 
-interface ConverterFunctionsObject {
-    [key: string]: ConverterFunction;
-}
-
-export const ConverterFunctions: ConverterFunctionsObject = {
-    camelCase: (input: string) => camelCase(input),
-    pascalCase: (input: string) => pascalCase(input),
-    pascalSnakeCase: (input: string) => pascalSnakeCase(input),
-    capitalCase: (input: string) => capitalCase(input),
-    constantCase: (input: string) => constantCase(input),
-    dotCase: (input: string) => dotCase(input),
-    kebabCase: (input: string) => kebabCase(input),
-    pathCase: (input: string) => pathCase(input),
-    sentenceCase: (input: string) => sentenceCase(input),
-    snakeCase: (input: string) => snakeCase(input),
-    trainCase: (input: string) => trainCase(input),
+export type ConverterFunctionsObject = {
+  [key in ConverterFunctionName]: ConverterFunction;
 };
 
-
-
+export const ConverterFunctions: ConverterFunctionsObject = {
+  camelcase: (input: string) => camelCase(input),
+  pascalcase: (input: string) => pascalCase(input),
+  pascalsnakecase: (input: string) => pascalSnakeCase(input),
+  capitalcase: (input: string) => capitalCase(input),
+  constantcase: (input: string) => constantCase(input),
+  dotcase: (input: string) => dotCase(input),
+  kebabcase: (input: string) => kebabCase(input),
+  pathcase: (input: string) => pathCase(input),
+  sentencecase: (input: string) => sentenceCase(input),
+  snakecase: (input: string) => snakeCase(input),
+  traincase: (input: string) => trainCase(input),
+};
 /*
     camelCase          =>  (`fooBar`)
     pascalCase         =>  (`FooBar`)    
