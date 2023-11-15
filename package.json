@@ -13,6 +13,8 @@
   "scripts": {
     "prepare": "husky install",
     "dev": "vite",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "host": "vite --host",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write .",
@@ -22,12 +24,19 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.10",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-popover": "^1.0.7",
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "@types/react-copy-to-clipboard": "^5.0.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "cmdk": "^0.2.0",
     "lucide-react": "^0.277.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7"
@@ -37,11 +46,13 @@
     "@commitlint/config-conventional": "^17.7.0",
     "@release-it/conventional-changelog": "^7.0.2",
     "@types/node": "^20.6.1",
+    "@types/prop-types": "^15.7.10",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
+    "@vitest/ui": "^0.34.6",
     "autoprefixer": "^10.4.15",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^9.0.0",
@@ -62,6 +73,7 @@
     "release-it": "^16.2.1",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vitest": "^0.34.6"
   }
 }
