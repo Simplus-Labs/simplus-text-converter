@@ -1,6 +1,6 @@
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { cn } from '@/lib/utils';
-import { Clipboard } from '@phosphor-icons/react';
+import { Clipboard, ClipboardText } from '@phosphor-icons/react';
 import { Button } from './button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { useState } from 'react';
@@ -40,25 +40,26 @@ export default function CopyClipboard({
 
   const [copied, setCopied] = useState<boolean>(false);
 
+  const onClick = (): void => {
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 1500);
+  };
+
   const icon = (): JSX.Element => {
-    return <Clipboard size={classes.clipBoardSize}></Clipboard>;
+    return <>{copied ? <ClipboardText size={classes.clipBoardSize} /> : <Clipboard size={classes.clipBoardSize} />}</>;
   };
 
   const button = (): JSX.Element => {
     return (
       <Button className="w-fit flex gap-3">
-        <Clipboard />
+        {icon()}
         Copy to ClipBoard
       </Button>
     );
   };
 
-  const onClick = (): void => {
-    setCopied(true);
-    setTimeout(() => {
-      setCopied(false);
-    }, 2000);
-  };
   return (
     <CopyToClipboard
       text={text}
