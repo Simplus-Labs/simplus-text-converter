@@ -1,7 +1,6 @@
 name: Simplus App Github Deploy
 
 on:
-  push:
   pull_request:
     branches:
       - main
