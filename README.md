@@ -1,5 +1,3 @@
-> 🌐 [¿No hablas inglés? Haz clic aquí para la versión en español.](docs/README-ES.md)
-
 <h1 align="center">Simplus Text Converter</h1>
 
 <p align="center">
@@ -9,14 +7,16 @@
 </p>
 <br/>
 
-<img src="docs/SimplusToolbox.png" style="height: 384px"/>
+**Text Converter Tool** offers a versatile solution to transform text effortlessly. Seamlessly convert text into various formats including CamelCase, lowercase, UPPERCASE, and more. This user-friendly application simplifies text formatting, enabling users to swiftly adapt text to their preferred style with ease and efficiency.
+
+<img src="docs/text-converter-tool.png" style="height: 384px"/>
 
 ## 🌟 Features
-- 🛠 **Consistent Design for Simplus Toolbox**: A design structure ensuring coherence across all tools from Simplus Toolbox.
-- 📱 **Responsive Layout**: Designed to look and function seamlessly on devices of all sizes.
-- 🎨 **Quick Theme Switching**: Rapidly change the look of your tool by selecting from a range of custom themes.
-- 💻 **Code Standardization and Quality**: Maintain clean and consistent code with leading tools like ESLint, Prettier, and Commitlint.
-- ⚙️ **Automated Semantic Versioning**: Semantic Versioning (SemVer) is now automated with Release It! for easy version management.
+
+- 🛠 **Funciones Versátiles**: Amplia gama de funciones, como camelCase, pascalCase, pascalSnakeCase, capitalCase, constantCase, dotCase, kebabCase, pathCase, sentenceCase, snakeCase y trainCase, para adaptar el texto a diversos estilos.
+
+- 📱 **Interfaz Responsiva** : Diseñada para adaptarse y funcionar sin inconvenientes en dispositivos de cualquier tamaño, asegurando una experiencia óptima para el usuario.
+
 
 ## 🧰 Tech Stack
 
@@ -29,39 +29,6 @@
 - [![Prettier][Prettier]][Prettier-url]
 - [![Vite][Vite]][Vite-url]
 - [![Release-It]][Release-It-url]
-
-## ✨ Customize
-
-Ready to make this boilerplate uniquely yours? Here’s how:
-
-1. **Meta Information**: Start by personalizing the project's identity.
-   - 📝 Navigate to the `index.html` file.
-   - 🖋 Update all title and meta tags to match your tool's name, description, and other details.
-
-2. **Theme Adaptation**: Shape the visual experience of your tool.
-   - 🎨 Set your desired theme by modifying the `data-theme` attribute in the `<html>` tag.
-
-```html
-<html lang="en" data-theme="green-gradient">
-```
-
-3. **Choose from Our Themes**: Whether you’re after a minimalist gray or a vibrant rose, we’ve got you covered. Select from a rich palette of themes tailored for a seamless user experience.
-
-### 🎨 List of themes
-
-| Theme  | data-theme | Preview |
-| ------------- | ------------- | ------------- |
-| Zinc | zinc-gradient | ![zinc-gradient](docs/zinc-gradient.svg)  |
-| Slate | slate-gradient | ![slate-gradient](docs/slate-gradient.svg) |
-| Stone | stone-gradient | ![stone-gradient](docs/stone-gradient.svg) |
-| Gray | gray-gradient | ![gray-gradient](docs/gray-gradient.svg) |
-| Neutral | neutral-gradient | ![neutral-gradient](docs/neutral-gradient.svg) |
-| Red | red-gradient | ![red-gradient](docs/red-gradient.svg) |
-| Rose | rose-gradient | ![rose-gradient](docs/rose-gradient.svg) |
-| Green | green-gradient | ![green-gradient](docs/green-gradient.svg) |
-| Blue | blue-gradient | ![blue-gradient](docs/blue-gradient.svg) |
-| Yellow | yellow-gradient | ![yellow-gradient](docs/yellow-gradient.svg) |
-| Violet | violet-gradient | ![violet-gradient](docs/violet-gradient.svg) |
 
 ## 📜 License
 
