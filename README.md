@@ -3,7 +3,6 @@
 <p align="center">
   <a href="#tech-stack--features">🌟 <strong>Features</strong></a> ·
   <a href="#tech-stack--features">🧰 <strong>Tech Stack</strong></a> ·
-  <a href="#customize-to-your-needs">✨ <strong>Customize</strong></a>
 </p>
 <br/>
 
